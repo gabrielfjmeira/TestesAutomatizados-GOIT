@@ -250,10 +250,11 @@ Preencher todos os campos do formulário de criação de atividade ao ar livre c
 	Input Text	                css:input[name=txtLocalizacao]              ${ENDERECO_ATV_INVALIDA}
 	Input Text	                css:input[name=nbrInscritos]                ${PARTICIPANTES_ATV_INVALIDA}
 	Input Text	                css:input[name=dataAtividade]               ${DATA_ATV_INVALIDA}	
-	Input Text	                css:input[name=horaAtividade]               ${HORA_ATV_INVALIDA}   
-    Sleep                       2s 	
+	Input Text	                css:input[name=horaAtividade]               ${HORA_ATV_INVALIDA}  
+	Click Element	            css:button[id=submitButton]
+    	Sleep                       2s 	
 	Capture Page Screenshot
-    Click Element	            css:button[id=submitButton]	
+    	
 
 Clicar em "Ok" no pop-up da criação de atividade ao ar livre
     Sleep                       2s
